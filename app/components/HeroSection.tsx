@@ -7,32 +7,32 @@ const galleryImages = [
     id: 1,
     label: "Hot Stone",
     shape: "portrait",
-    src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=500&fit=crop"
+    src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=500&fit=crop",
   },
   {
     id: 2,
     label: "Aromatherapy",
     shape: "landscape",
-    src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=500&h=400&fit=crop"
+    src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=500&h=400&fit=crop",
   },
   {
     id: 3,
     label: "Deep Tissue",
     shape: "square",
-    src: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=400&h=400&fit=crop"
+    src: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=400&h=400&fit=crop",
   },
   {
     id: 4,
     label: "Facial",
     shape: "portrait",
-    src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=500&fit=crop"
+    src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=500&fit=crop",
   },
-  {
-    id: 5,
-    label: "Relaxation",
-    shape: "landscape",
-    src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500&h=400&fit=crop"
-  },
+  // {
+  //   id: 5,
+  //   label: "Relaxation",
+  //   shape: "landscape",
+  //   src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500&h=400&fit=crop",
+  // },
 ];
 
 function FlowerIcon({ className }: { className?: string }) {
@@ -89,13 +89,11 @@ export default function HeroSection() {
               key={image.id}
               className={`relative flex-shrink-0 overflow-hidden transition-transform duration-500 hover:scale-105 ${
                 image.shape === "portrait"
-                  ? "w-28 h-36 md:w-36 md:h-48 lg:w-44 lg:h-56 rounded-full"
+                  ? "w-36 h-44 md:w-44 md:h-56 lg:w-56 lg:h-72 rounded-full"
                   : image.shape === "landscape"
-                  ? "w-36 h-28 md:w-48 md:h-36 lg:w-56 lg:h-44 rounded-full"
-                  : "w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full"
-              } ${
-                index >= 3 ? "hidden sm:flex" : ""
-              } ${
+                    ? "w-44 h-36 md:w-56 md:h-44 lg:w-72 lg:h-56 rounded-full"
+                    : "w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 rounded-full"
+              } ${index >= 3 ? "hidden sm:flex" : ""} ${
                 index >= 4 ? "sm:hidden md:flex" : ""
               }`}
             >
@@ -104,7 +102,7 @@ export default function HeroSection() {
                 alt={image.label}
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 150px, 200px"
+                sizes="(max-width: 768px) 180px, 280px"
               />
             </div>
           ))}

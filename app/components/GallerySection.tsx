@@ -70,23 +70,6 @@ export default function GallerySection() {
             </div>
           ))}
         </div>
-
-        {/* Instagram CTA */}
-        <div className="mt-12 md:mt-16 text-center">
-          <a
-            href="https://instagram.com/opalya"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 group"
-          >
-            <InstagramIcon className="w-6 h-6 text-brown transition-colors duration-300 group-hover:text-olive" />
-            <span className="font-sans text-base md:text-lg text-brown transition-colors duration-300 group-hover:text-olive">
-              Follow us{" "}
-              <span className="font-medium">@opalya</span>
-            </span>
-            <ArrowIcon className="w-4 h-4 text-brown transition-all duration-300 group-hover:text-olive group-hover:translate-x-1" />
-          </a>
-        </div>
       </div>
     </section>
   );
@@ -94,7 +77,13 @@ export default function GallerySection() {
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={1.5}
+    >
       <rect x="2" y="2" width="20" height="20" rx="5" />
       <circle cx="12" cy="12" r="4" />
       <circle cx="18" cy="6" r="1.5" fill="currentColor" stroke="none" />

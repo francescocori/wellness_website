@@ -11,7 +11,7 @@ export default function ContactSection() {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -39,31 +39,14 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Contact Information */}
-          <div className="flex flex-col justify-center order-2 lg:order-1">
+          <div className="flex flex-col justify-center order-2 lg:order-1 mb-auto">
             <h3 className="font-serif text-2xl font-light text-brown mb-8">
               Get in Touch
             </h3>
 
             <div className="space-y-8">
-              {/* Address */}
-              <div className="flex gap-4">
-                <div className="shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-cream-light">
-                  <LocationIcon className="w-5 h-5 text-olive" />
-                </div>
-                <div>
-                  <h4 className="font-sans text-sm font-medium uppercase tracking-wider text-brown/50 mb-1">
-                    Address
-                  </h4>
-                  <p className="font-sans text-base text-brown">
-                    165 N Front Street
-                    <br />
-                    Columbus, OH 43215
-                  </p>
-                </div>
-              </div>
-
               {/* Phone */}
               <div className="flex gap-4">
                 <div className="shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-cream-light">
@@ -117,46 +100,10 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
-
-            {/* Social Links */}
-            <div className="mt-10 pt-8 border-t border-brown/10">
-              <h4 className="font-sans text-sm font-medium uppercase tracking-wider text-brown/50 mb-4">
-                Follow Us
-              </h4>
-              <div className="flex gap-4">
-                <a
-                  href="https://instagram.com/opalya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-cream-light text-brown hover:bg-olive hover:text-cream-light transition-all duration-300"
-                  aria-label="Instagram"
-                >
-                  <InstagramIcon className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://facebook.com/opalya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-cream-light text-brown hover:bg-olive hover:text-cream-light transition-all duration-300"
-                  aria-label="Facebook"
-                >
-                  <FacebookIcon className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://pinterest.com/opalya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-cream-light text-brown hover:bg-olive hover:text-cream-light transition-all duration-300"
-                  aria-label="Pinterest"
-                >
-                  <PinterestIcon className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-cream-light p-8 md:p-10 rounded-2xl order-1 lg:order-2">
+          <div className="bg-cream p-8 md:p-10 rounded-2xl order-1 lg:order-2">
             <h3 className="font-serif text-2xl font-light text-brown mb-6">
               Send Us a Message
             </h3>
@@ -176,7 +123,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-cream border border-brown/10 rounded-xl font-sans text-brown placeholder:text-brown/40 focus:outline-none focus:border-olive focus:ring-1 focus:ring-olive transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-cream border border-brown/20 rounded-xl font-sans text-brown placeholder:text-brown/40 focus:outline-none focus:border-olive focus:ring-1 focus:ring-olive transition-colors duration-300"
                   placeholder="Your name"
                 />
               </div>
@@ -196,7 +143,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-cream border border-brown/10 rounded-xl font-sans text-brown placeholder:text-brown/40 focus:outline-none focus:border-olive focus:ring-1 focus:ring-olive transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-cream border border-brown/20 rounded-xl font-sans text-brown placeholder:text-brown/40 focus:outline-none focus:border-olive focus:ring-1 focus:ring-olive transition-colors duration-300"
                   placeholder="your@email.com"
                 />
               </div>
@@ -215,7 +162,7 @@ export default function ContactSection() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-cream border border-brown/10 rounded-xl font-sans text-brown placeholder:text-brown/40 focus:outline-none focus:border-olive focus:ring-1 focus:ring-olive transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-cream border border-brown/20 rounded-xl font-sans text-brown placeholder:text-brown/40 focus:outline-none focus:border-olive focus:ring-1 focus:ring-olive transition-colors duration-300"
                   placeholder="(555) 123-4567"
                 />
               </div>
@@ -235,7 +182,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 bg-cream border border-brown/10 rounded-xl font-sans text-brown placeholder:text-brown/40 focus:outline-none focus:border-olive focus:ring-1 focus:ring-olive transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 bg-cream border border-brown/20 rounded-xl font-sans text-brown placeholder:text-brown/40 focus:outline-none focus:border-olive focus:ring-1 focus:ring-olive transition-colors duration-300 resize-none"
                   placeholder="Tell us about your needs..."
                 />
               </div>
@@ -257,40 +204,90 @@ export default function ContactSection() {
 
 function LocationIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={1.5}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+      />
     </svg>
   );
 }
 
 function PhoneIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={1.5}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+      />
     </svg>
   );
 }
 
 function EmailIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={1.5}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+      />
     </svg>
   );
 }
 
 function ClockIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={1.5}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
     </svg>
   );
 }
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={1.5}
+    >
       <rect x="2" y="2" width="20" height="20" rx="5" />
       <circle cx="12" cy="12" r="4" />
       <circle cx="18" cy="6" r="1.5" fill="currentColor" stroke="none" />

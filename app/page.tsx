@@ -19,21 +19,19 @@ export default function Home() {
       <main>
         {/* Hero Section - No animation, visible on load */}
         <HeroSection />
-
+        {/* About Section */}
+        <AnimatedSection>
+          <AboutSection />
+        </AnimatedSection>
         {/* Treatments Section */}
         <AnimatedSection>
           <TreatmentsSection />
         </AnimatedSection>
 
-        {/* About Section */}
-        <AnimatedSection>
-          <AboutSection />
-        </AnimatedSection>
-
         {/* Benefits Section */}
-        <AnimatedSection>
+        {/* <AnimatedSection>
           <BenefitsSection />
-        </AnimatedSection>
+        </AnimatedSection> */}
 
         {/* Gallery Section */}
         <AnimatedSection>

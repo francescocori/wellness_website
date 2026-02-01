@@ -8,7 +8,8 @@ const treatments = [
       "A gentle, relaxing massage using long strokes to ease tension and improve circulation throughout your body.",
     duration: "60 min",
     price: "$120",
-    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600&h=400&fit=crop",
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const treatments = [
       "Targeted pressure on deep muscle layers to release chronic tension and knots for lasting relief.",
     duration: "75 min",
     price: "$150",
-    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&h=400&fit=crop",
   },
   {
     id: 3,
@@ -26,7 +28,8 @@ const treatments = [
       "Heated basalt stones placed on key points to melt away stress and deeply relax tired muscles.",
     duration: "90 min",
     price: "$180",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop",
   },
   {
     id: 4,
@@ -35,7 +38,8 @@ const treatments = [
       "Essential oils combined with gentle massage techniques to restore balance and elevate your mood.",
     duration: "60 min",
     price: "$135",
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=400&fit=crop",
   },
 ];
 
@@ -90,7 +94,7 @@ export default function TreatmentsSection() {
                 </p>
 
                 {/* Footer: Duration & Price */}
-                <div className="mt-6 pt-6 border-t border-brown/10 flex items-center justify-between">
+                {/* <div className="mt-6 pt-6 border-t border-brown/10 flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <ClockIcon className="w-4 h-4 text-olive" />
                     <span className="font-sans text-sm text-brown/70">
@@ -100,12 +104,12 @@ export default function TreatmentsSection() {
                   <span className="font-serif text-2xl font-medium text-brown">
                     {treatment.price}
                   </span>
-                </div>
+                </div> */}
 
                 {/* Book Button */}
-                <button className="mt-6 w-full py-3 bg-brown text-cream-light font-sans text-sm font-medium tracking-wider uppercase rounded-pill transition-all duration-300 hover:bg-brown-light">
+                {/* <button className="mt-6 w-full py-3 bg-brown text-cream-light font-sans text-sm font-medium tracking-wider uppercase rounded-pill transition-all duration-300 hover:bg-brown-light">
                   Book Treatment
-                </button>
+                </button> */}
               </div>
             </article>
           ))}

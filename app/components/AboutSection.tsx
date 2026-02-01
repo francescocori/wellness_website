@@ -34,17 +34,17 @@ export default function AboutSection() {
 
             <div className="mt-8 space-y-6">
               <p className="font-sans text-base md:text-lg text-brown/70 leading-relaxed">
-                Nestled in the heart of the city, OPALYA offers a tranquil escape
-                from the demands of everyday life. Our sanctuary was founded on the
-                belief that true wellness comes from nurturing both body and mind in
-                an environment of complete serenity.
+                Nestled in the heart of the city, OPALYA offers a tranquil
+                escape from the demands of everyday life. Our sanctuary was
+                founded on the belief that true wellness comes from nurturing
+                both body and mind in an environment of complete serenity.
               </p>
 
               <p className="font-sans text-base md:text-lg text-brown/70 leading-relaxed">
                 Every detail of our space has been thoughtfully curated—from the
-                warm, earth-toned interiors to the subtle aromatherapy that greets
-                you at the door. Our team of certified therapists brings years of
-                expertise and a genuine passion for healing touch.
+                warm, earth-toned interiors to the subtle aromatherapy that
+                greets you at the door. Our team of certified therapists brings
+                years of expertise and a genuine passion for healing touch.
               </p>
 
               <p className="font-sans text-base md:text-lg text-brown/70 leading-relaxed">
@@ -52,34 +52,6 @@ export default function AboutSection() {
                 with yourself. At OPALYA, your journey to relaxation begins the
                 moment you step through our doors.
               </p>
-            </div>
-
-            {/* Stats */}
-            <div className="mt-10 pt-10 border-t border-brown/10 grid grid-cols-3 gap-6">
-              <div>
-                <span className="font-serif text-3xl md:text-4xl font-light text-brown">
-                  10+
-                </span>
-                <p className="mt-1 font-sans text-sm text-brown/60">
-                  Years of Experience
-                </p>
-              </div>
-              <div>
-                <span className="font-serif text-3xl md:text-4xl font-light text-brown">
-                  15k
-                </span>
-                <p className="mt-1 font-sans text-sm text-brown/60">
-                  Happy Clients
-                </p>
-              </div>
-              <div>
-                <span className="font-serif text-3xl md:text-4xl font-light text-brown">
-                  8
-                </span>
-                <p className="mt-1 font-sans text-sm text-brown/60">
-                  Expert Therapists
-                </p>
-              </div>
             </div>
 
             {/* CTA */}

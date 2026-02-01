@@ -22,41 +22,14 @@ export default function Footer() {
     <footer className="bg-brown text-cream-light">
       {/* Main Footer Content */}
       <div className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-        {/* Newsletter Section */}
-        <div className="text-center mb-16 pb-16 border-b border-cream-light/10">
-          <h3 className="font-serif text-3xl md:text-4xl font-light mb-4">
-            Join Our Wellness Community
-          </h3>
-          <p className="font-sans text-sm md:text-base text-cream-light/60 max-w-md mx-auto mb-8">
-            Subscribe to receive exclusive offers, wellness tips, and updates
-            on new treatments.
-          </p>
-          <form
-            onSubmit={handleNewsletterSubmit}
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-          >
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              required
-              className="flex-1 px-5 py-3 bg-brown-light border border-cream-light/20 rounded-pill font-sans text-cream-light placeholder:text-cream-light/40 focus:outline-none focus:border-cream-light/40 transition-colors duration-300"
-            />
-            <button
-              type="submit"
-              className="px-8 py-3 bg-cream-light text-brown font-sans text-sm font-medium tracking-wider uppercase rounded-pill transition-all duration-300 hover:bg-cream"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
-
         {/* Three Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {/* Column 1: Logo + Tagline */}
           <div>
-            <a href="#" className="inline-block font-serif text-2xl font-medium tracking-wider">
+            <a
+              href="#"
+              className="inline-block font-serif text-2xl font-medium tracking-wider"
+            >
               OPALYA.
             </a>
             <p className="mt-4 font-sans text-sm text-cream-light/60 leading-relaxed max-w-xs">
@@ -152,7 +125,13 @@ export default function Footer() {
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={1.5}
+    >
       <rect x="2" y="2" width="20" height="20" rx="5" />
       <circle cx="12" cy="12" r="4" />
       <circle cx="18" cy="6" r="1.5" fill="currentColor" stroke="none" />
